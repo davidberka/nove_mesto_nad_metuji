@@ -123,6 +123,7 @@ header {
 
 .burger {
   padding: 0.5rem;
+  cursor: pointer;
 }
 .burger div {
   width: 2rem;
@@ -141,6 +142,25 @@ header {
 }
 .burger.active div:nth-child(3) {
   transform: translateY(-0.4rem) rotate(-45deg);
+}
+
+.footer_url_path {
+  background: #FFDD18;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+}
+.footer_url_path .fup_logo {
+  height: 1.375rem;
+  width: auto;
+  object-fit: contain;
+  margin-right: 0.8rem;
+}
+.footer_url_path ul {
+  display: flex;
+  align-items: center;
+  color: #17428C;
+  font-size: 0.875rem;
 }
 
 .button_hp {
@@ -361,6 +381,96 @@ header {
 
 .matches_item_footer a {
   color: #17428C;
+}
+
+.multi {
+  background: #17428C;
+}
+
+.multi_container h2 {
+  margin-bottom: 1rem;
+}
+
+.table_container {
+  background: #FFFFFF;
+  padding: 2.5rem 1rem;
+}
+.table_container h2 {
+  color: #153170;
+}
+.table_container .table img {
+  width: 1.375rem;
+  height: 1.375rem;
+  object-fit: contain;
+}
+
+.youth_articles {
+  padding: 2.5rem 1rem;
+}
+.youth_articles h2 {
+  color: #FFFFFF;
+}
+
+.youth_articles_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.youth_articles_container > div {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.youth_articles_container > div img.main_img {
+  width: 5rem;
+  height: 5rem;
+}
+.youth_articles_container > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.75rem;
+  height: 5rem;
+  width: 100%;
+  border-bottom: 1px solid #6F80B3;
+}
+.youth_articles_container > div > div h4 {
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.banners {
+  background: #17428C;
+}
+
+.banners_container {
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.banners_container > div {
+  width: 100%;
+  height: 5.5rem;
+  background: #FFFFFF;
+  display: grid;
+  place-items: center;
+}
+
+.partners_container {
+  padding: 2.5rem 1rem;
+}
+.partners_container h2 {
+  color: #17428C;
+  margin-bottom: 1rem;
+}
+
+.partners_items_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
