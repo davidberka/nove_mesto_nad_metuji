@@ -1,7 +1,32 @@
+.footer {
+
+    .bg {
+        display: none;
+    }
+
+    h5 {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: $primaryYellow;
+        text-transform: uppercase;
+    }
+
+    a, p {
+        font-size: .875rem;
+        font-weight: 400;
+        color: $white;
+    }
+
+    background: $darkBlue;
+}
+
+.footer_container {
+    padding: 2.5rem 1rem;
+}
+
 .footer_url_path {
     background: $primaryYellow;
-    display: flex;
-    align-items: center;
+    display: none;
     padding: .4rem 1rem;
 
     .fup_logo {
@@ -16,5 +41,53 @@
         align-items: center;
         color: $primaryBlue;
         font-size: 0.875rem;
+    }
+}
+
+.footer_row1 {
+    margin-bottom: 1.5rem;
+
+    .col1 {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 6rem;
+            width: auto;
+            object-fit: contain;
+            margin-right: 1.5rem;
+        }
+    }
+
+    .col2 {
+        display: none;
+    }
+}
+
+.footer_row2 {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+    border-top: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer_row3 {
+    display: flex;
+    justify-content: flex-end;
+    p {
+        display: flex;
+        align-items: center;
+        
+        a {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 0 .5rem;
+            }
+        }
     }
 }

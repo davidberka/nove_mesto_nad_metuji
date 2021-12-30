@@ -52,6 +52,35 @@ h4 {
   font-weight: 400;
 }
 
+.table {
+  border-collapse: collapse;
+}
+.table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(21, 49, 112, 0.2);
+}
+.table tr td {
+  padding: 0.5rem;
+}
+.table tr td:nth-child(2) {
+  padding: 0.5rem 0;
+}
+.table tr td:nth-child(2) img {
+  vertical-align: middle;
+}
+.table tr td img {
+  min-width: 1.375rem;
+  width: 1.375rem;
+  height: auto;
+  object-fit: contain;
+}
+.table tr td:nth-child(3) {
+  font-weight: 700;
+  line-height: 1.1;
+}
+.table tr td:nth-child(6) {
+  font-weight: 700;
+}
+
 header {
   position: relative;
   z-index: 50;
@@ -144,10 +173,31 @@ header {
   transform: translateY(-0.4rem) rotate(-45deg);
 }
 
+.footer {
+  background: #153170;
+}
+.footer .bg {
+  display: none;
+}
+.footer h5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #FFDD18;
+  text-transform: uppercase;
+}
+.footer a, .footer p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.footer_container {
+  padding: 2.5rem 1rem;
+}
+
 .footer_url_path {
   background: #FFDD18;
-  display: flex;
-  align-items: center;
+  display: none;
   padding: 0.4rem 1rem;
 }
 .footer_url_path .fup_logo {
@@ -161,6 +211,49 @@ header {
   align-items: center;
   color: #17428C;
   font-size: 0.875rem;
+}
+
+.footer_row1 {
+  margin-bottom: 1.5rem;
+}
+.footer_row1 .col1 {
+  display: flex;
+  align-items: center;
+}
+.footer_row1 .col1 img {
+  height: 6rem;
+  width: auto;
+  object-fit: contain;
+  margin-right: 1.5rem;
+}
+.footer_row1 .col2 {
+  display: none;
+}
+
+.footer_row2 {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer_row3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_row3 p {
+  display: flex;
+  align-items: center;
+}
+.footer_row3 p a {
+  display: flex;
+  align-items: center;
+}
+.footer_row3 p a img {
+  margin: 0 0.5rem;
 }
 
 .button_hp {
@@ -394,14 +487,7 @@ header {
 .table_container {
   background: #FFFFFF;
   padding: 2.5rem 1rem;
-}
-.table_container h2 {
   color: #153170;
-}
-.table_container .table img {
-  width: 1.375rem;
-  height: 1.375rem;
-  object-fit: contain;
 }
 
 .youth_articles {
