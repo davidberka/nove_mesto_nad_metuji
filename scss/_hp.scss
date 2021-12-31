@@ -236,6 +236,7 @@
  
     .resultTime {
         align-self: flex-end;
+        margin-left: .5rem;
     }
 }
 
@@ -335,4 +336,86 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .topstory_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .topstory_article {
+        flex: .6;
+        height: unset;
+        // padding: ;
+    }
+
+    .topstory_article_content {
+        padding: 3rem;
+    }
+
+    .more_articles {
+        flex: .4;
+        padding: 3rem;
+    }
+
+    .news {
+        width: 60%;
+        padding: 3rem;
+    }
+
+    .matches_container {
+        padding: 3rem;
+    }
+
+    .matches_items_container {
+        flex-direction: row;
+    }
+
+    .table_container, .youth_articles, .banners_container, .partners_container {
+        padding: 3rem;
+    }
+
+    .youth_articles_container {
+        & > div {
+            width: max-content;
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .matches_item {
+        width: 100%;
+    }
+
+    .multi_container {
+        display: flex;
+    }
+
+    .table_container {
+        flex: .4;
+    }
+
+    .youth_articles {
+        flex: .6;
+    }
+
+    .banners_container {
+       flex-direction: row; 
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .topstory_article {
+        flex: 0.4;
+    }
+
+    .more_articles {
+        flex: 0.32;
+    }
+
+    .news {
+        flex: 0.28;
+    }
 }

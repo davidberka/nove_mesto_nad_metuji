@@ -89,3 +89,10 @@ h4 {
         }
     }
 }
+
+.select {
+    border: 1px solid rgba($color: $darkBlue, $alpha: 0.2);
+    border-radius: 3px;
+    outline: none;
+    padding: .5rem;
+}
