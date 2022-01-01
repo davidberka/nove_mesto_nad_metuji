@@ -10,7 +10,7 @@ header {
 .header_bg {
     position: absolute;
     inset: 0;
-    max-height: 100%;
+    max-height: 5.5rem;
     width: 100%;
     object-fit: cover;
 }
@@ -64,6 +64,8 @@ header {
     flex-direction: column;
 
     li {
+        text-transform: uppercase;
+
         &:not(:last-child) {
             margin-bottom: 1rem;
         }
@@ -107,5 +109,98 @@ header {
 @media only screen and (min-width: 1024px) {
     .header_container {
         padding: 0 3rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .topbar {
+        display: block;
+    }
+
+    header {
+        height: 9rem;
+    }
+
+    .header_container {
+        padding: 0 3.75rem;
+        justify-content: unset;
+    }
+
+    .header_logo_container {
+        margin-right: 2.5rem;
+
+        img {
+            height: 10.75rem;
+        }
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header_rows_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header_row1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5.5rem;
+
+        & > div {
+            display: flex;
+
+            & > div:nth-child(1) {
+                display: flex;
+                align-items: center;
+                padding-right: 2rem;
+
+                a {
+                    color: $white;
+                    font-size: 1rem;
+                }
+            }
+
+            & > div:nth-child(2) {
+                display: flex;
+                align-items: center;
+                padding: 0 2rem;
+                border-right: 1px solid rgba($color: $white, $alpha: .5);
+                border-left: 1px solid rgba($color: $white, $alpha: .5);
+            }
+
+            & > div:nth-child(3) {
+                display: flex;
+                gap: 1.5rem;
+                padding-left: 2rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .header_row2 {
+        position: unset;
+        transform: translateX(0);
+        padding: 0;
+        height: 3.75rem;
+        background: transparent;
+    }
+
+    .nav_links {
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
+        li:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 }
