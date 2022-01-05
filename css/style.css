@@ -412,8 +412,9 @@ footer a, footer p {
   font-weight: 600;
   font-size: 0.875rem;
 }
-.button_hp img {
+.button_hp .arrow {
   margin-left: 1rem;
+  margin-bottom: 0rem;
 }
 
 .topstory_article {
@@ -889,6 +890,83 @@ footer a, footer p {
   .banners_container, .partners_container {
     padding: 3.5rem 8rem;
   }
+}
+.matchArticle_main {
+  background: #17428C;
+}
+
+.matchArticle_desc {
+  padding: 1.5rem 1rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+.matchArticle_desc > div {
+  display: flex;
+  align-items: center;
+}
+.matchArticle_desc > div img {
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+.matchArticle_content {
+  padding: 2rem 1rem 2.5rem 1rem;
+  background: #FFFFFF;
+  color: #153170;
+}
+.matchArticle_content h1 {
+  font-size: 2rem;
+  line-height: 1.125;
+  margin-bottom: 2rem;
+}
+.matchArticle_content .anotation {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.matchArticle_content h2, .matchArticle_content h3, .matchArticle_content h4, .matchArticle_content h5 {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+.matchArticle_content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.matchArticle_content img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+.matchArticle_content .quotation {
+  color: #17428C;
+  text-align: center;
+}
+.matchArticle_content .quotation h2 {
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.matchArticle_gallery > a {
+  margin: 0 auto;
+}
+
+.matchArticle_gallery_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.matchArticle_gallery_container a {
+  width: 8rem;
+  height: 8rem;
+}
+.matchArticle_gallery_container a img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
