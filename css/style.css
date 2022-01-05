@@ -281,6 +281,11 @@ header {
     margin-bottom: 0;
   }
 }
+@media only screen and (min-width: 1920px) {
+  .header_container {
+    padding: 0 8rem;
+  }
+}
 footer {
   background: #153170;
 }
@@ -371,7 +376,7 @@ footer a, footer p {
 }
 @media only screen and (min-width: 1440px) {
   .footer_container {
-    padding: 3.5rem 3.75rem 1.5rem 3.5rem;
+    padding: 3.5rem 3.75rem 1.5rem 3.75rem;
   }
 
   .footer_row1 {
@@ -390,6 +395,11 @@ footer a, footer p {
   .footer_row1 .col2 {
     display: flex;
     gap: 7rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .footer_container {
+    padding: 3.5rem 8rem 1.5rem 8rem;
   }
 }
 .button_hp {
@@ -848,6 +858,36 @@ footer a, footer p {
 
   .banners_container, .partners_container {
     padding: 3.5rem 3.75rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .topstory_article_content {
+    padding-left: 8rem;
+  }
+
+  .more_articles {
+    padding: 3rem;
+  }
+
+  .news {
+    padding-left: 3rem;
+    padding-right: 8rem;
+  }
+
+  .matches_container {
+    padding: 3.5rem 8rem;
+  }
+
+  .table_container {
+    padding: 3.5rem 2rem 3.5rem 8rem;
+  }
+
+  .youth_articles {
+    padding: 3.5rem 8rem 3.5rem 2rem;
+  }
+
+  .banners_container, .partners_container {
+    padding: 3.5rem 8rem;
   }
 }
 

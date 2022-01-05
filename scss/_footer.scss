@@ -100,7 +100,7 @@ footer {
 
 @media only screen and (min-width: 1440px) {
     .footer_container {
-        padding: 3.5rem 3.75rem 1.5rem 3.5rem;
+        padding: 3.5rem 3.75rem 1.5rem 3.75rem;
     }
 
     .footer_row1 {
@@ -122,5 +122,11 @@ footer {
             display: flex;
             gap: 7rem;
         }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .footer_container {
+        padding: 3.5rem 8rem 1.5rem 8rem;
     }
 }
