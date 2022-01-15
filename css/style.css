@@ -1409,5 +1409,211 @@ footer a, footer p {
     padding: 3.5rem 8rem;
   }
 }
+.player_main h3 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.player_imgDesc_container .player_img {
+  height: 25.5rem;
+  width: 100%;
+}
+.player_imgDesc_container .player_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.player_imgDesc_container .player_desc {
+  background: #17428C;
+  color: #FFFFFF;
+  position: relative;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.player_imgDesc_container .player_desc .bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 75%;
+  object-fit: cover;
+}
+.player_imgDesc_container .player_desc .player_num {
+  -webkit-text-stroke: 1px #FFDD18;
+  color: transparent;
+  font-size: 5.5rem;
+  line-height: 0.7;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.player_imgDesc_container .player_desc > div {
+  position: relative;
+  z-index: 1;
+}
+.player_imgDesc_container .player_desc > div h3 {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.player_stats {
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.player_stats h1 {
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #17428C;
+}
+.player_stats table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.player_stats table th, .player_stats table td {
+  padding: 0.3rem;
+  text-align: center;
+  font-weight: 400;
+}
+.player_stats table th:nth-child(1), .player_stats table td:nth-child(1) {
+  padding-left: 1rem;
+  text-align: left;
+}
+.player_stats table thead {
+  background: #153170;
+  color: #FFFFFF;
+}
+.player_stats table tbody tr:nth-child(odd) {
+  background: #F2F2F2;
+}
+
+.player_aside {
+  background: #17428C;
+  padding: 2.5rem 1rem;
+}
+
+.player_aside_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.player_aside_item.highlighted {
+  border-bottom: 2px solid #FFDD18;
+}
+.player_aside_item h2 {
+  color: #FFDD18;
+  font-weight: 800;
+  line-height: 1;
+  margin-right: 1rem;
+}
+.player_aside_item h3 {
+  flex: 1;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+  .player_imgDesc_container {
+    display: flex;
+  }
+  .player_imgDesc_container .player_img {
+    height: 31rem;
+    flex: 0.65;
+  }
+  .player_imgDesc_container .player_desc {
+    flex: 0.35;
+  }
+
+  .player_aside {
+    padding: 2.5rem 8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .player_main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .player_content {
+    flex: 0.65;
+  }
+
+  .player_imgDesc_container .player_desc .player_num {
+    right: unset;
+    left: 0;
+  }
+
+  .player_aside {
+    flex: 0.35;
+    padding: 2.5rem 1rem 2.5rem 3rem;
+  }
+
+  .player_stats {
+    padding: 2.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .player_content {
+    flex: 0.7;
+  }
+
+  .player_imgDesc_container .player_img {
+    height: 35rem;
+  }
+
+  .player_aside {
+    flex: 0.3;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .player_imgDesc_container .player_img {
+    flex: 0.7;
+    height: 44.25rem;
+  }
+  .player_imgDesc_container .player_desc {
+    flex: 0.3;
+    gap: 2.5rem;
+    padding: 4rem 1.5rem;
+  }
+  .player_imgDesc_container .player_desc .player_num {
+    font-size: 9rem;
+  }
+
+  .player_stats {
+    padding: 8rem 3rem;
+    gap: 4rem;
+  }
+  .player_stats table th, .player_stats table td {
+    padding: 0.4rem;
+  }
+  .player_stats table th:nth-child(1), .player_stats table td:nth-child(1) {
+    padding-left: 2.5rem;
+  }
+
+  .player_aside {
+    padding: 4rem 3rem;
+  }
+
+  .player_aside_item h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .player_aside {
+    padding-left: 8rem;
+  }
+
+  .player_stats {
+    padding-right: 8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
