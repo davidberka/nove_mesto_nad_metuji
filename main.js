@@ -26,3 +26,24 @@ if (window.innerWidth < 1024) {
     });
   });
 }
+
+function matchesLinksHandler() {
+  const matchesLinks = document.querySelectorAll('.matches_links li');
+  const matchesContainers = document.querySelectorAll('.matches_items_container');
+
+  matchesLinks.forEach((link) => {
+    link.addEventListener("click", function() {
+      let current = document.querySelector(".matches_links li.selected");
+      current.className = current.className.replace("selected", "");
+      this.classList.add("selected");
+
+      linkId = link.getAttribute('data-id');
+
+      let currentContainer = document.querySelector(".matches_items_container.selected");
+      currentContainer.className = currentContainer.className.replace("selected", "");
+      document.querySelector(`.matches_items_container[id="${linkId}"]`)?.classList.add('selected');
+    });
+  });
+}
+
+matchesLinksHandler();

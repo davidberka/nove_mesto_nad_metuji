@@ -21,9 +21,19 @@
     align-items: center;
     border-bottom: 1px solid rgba($color: $white, $alpha: .5);
     padding-bottom: 1rem;
+    transition: all .1s ease-out;
 
     .main_img {
         display: none;
+        transition: all .1s ease-out;
+    }
+
+    &:hover {
+        border-bottom: 1px solid rgba($color: $white, $alpha: .85);
+
+        .main_img {
+            opacity: .75;
+        }
     }
 
     & > div {

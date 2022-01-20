@@ -113,6 +113,12 @@
     align-items: center;
     padding: .25rem;
     border-bottom: 1px solid rgba($color: $white, $alpha: .5);
+    transition: all .1s ease-out;
+
+    &:hover {
+        background: #0d3a86;
+        border-bottom: 1px solid rgba($color: $white, $alpha: .85);
+    }
 
     &.highlighted {
         border-bottom: 2px solid $primaryYellow;
