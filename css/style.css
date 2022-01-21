@@ -281,17 +281,11 @@ header {
   }
   .header_row1 > div > div:nth-child(2) {
     display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  .header_row1 > div > div:nth-child(3) {
-    display: flex;
     gap: 1.5rem;
     padding-left: 2rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
   }
-  .header_row1 > div > div:nth-child(3) a {
+  .header_row1 > div > div:nth-child(2) a {
     display: flex;
     align-items: center;
   }
@@ -346,7 +340,7 @@ header {
     top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     transition: all 0.1s ease-out;
     transform: translateY(2.5rem);
     visibility: hidden;
@@ -2011,6 +2005,15 @@ footer a, footer p {
   .standings_main {
     padding: 3.5rem 8rem;
   }
+}
+.discussion_main {
+  background: #17428C;
+  padding: 2.5rem 1rem;
+}
+.discussion_main > h1 {
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

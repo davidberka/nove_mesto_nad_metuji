@@ -1,0 +1,10 @@
+.discussion_main {
+    background: $primaryBlue;
+    padding: 2.5rem 1rem;
+
+    & > h1 {
+        font-weight: 900;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+}
