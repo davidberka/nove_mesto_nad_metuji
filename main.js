@@ -9,7 +9,7 @@ burgerMenu.addEventListener("click", () => {
 if (window.innerWidth < 1024) {
   const navLinks = document.querySelectorAll(".nav_links > li > a");
   const dropdownMenus = document.querySelectorAll(".dropdown_menu");
-
+  
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       // remove active className

@@ -63,7 +63,8 @@ header {
     display: flex;
     flex-direction: column;
 
-    li {
+    & > li {
+        height: 100%;
         text-transform: uppercase;
 
         &:not(:last-child) {
@@ -72,6 +73,34 @@ header {
 
         a {
             color: $white;
+            display: block;
+            height: 100%;
+        }
+    }
+}
+
+.dropdown_menu {
+    z-index: 20;
+    display: none;
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+
+    li {
+        border-bottom: 1px solid $primaryYellow;
+        width: max-content;
+        font-weight: 400;
+        font-size: 1rem;
+
+        a {
+            transition: color .1s ease-out;
+        }
+        
+        &:hover a {
+            color: $primaryYellow;
         }
     }
 }
@@ -199,9 +228,59 @@ header {
         align-items: center;
         gap: 2rem;
 
-        li:not(:last-child) {
-            margin-bottom: 0;
+        & > li {
+            position: relative;
+
+            &::after {
+                content: "";
+                background: $white;
+                position: absolute;
+                right: 0;
+                bottom: 1rem;
+                width: 0;
+                height: 2px;
+                transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                .dropdown_menu {
+                    transform: translateY(1.5rem);
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                &::after {
+                    right: auto;
+                    width: 100%;
+                    left: 0;
+                }
+            }
+            
+            a {
+                display: flex;
+                align-items: center;
+            }
         }
+    }
+
+    .dropdown_menu {
+        position: absolute;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        transition: all .1s ease-out;
+        transform: translateY(2.5rem);
+        visibility: hidden;
+        opacity: 0;
+        background: $darkBlue;
+        color: $white;
+        padding: 1rem;
+        width: max-content;
     }
 }
 

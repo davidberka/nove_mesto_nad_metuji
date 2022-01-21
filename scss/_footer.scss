@@ -61,6 +61,10 @@ footer {
 
     .col2 {
         display: none;
+
+        li:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -72,6 +76,10 @@ footer {
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+
+    li:hover {
+        text-decoration: underline;
+    }
 }
 
 .footer_row3 {
