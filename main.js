@@ -29,7 +29,6 @@ if (window.innerWidth < 1024) {
 
 function matchesLinksHandler() {
   const matchesLinks = document.querySelectorAll('.matches_links li');
-  const matchesContainers = document.querySelectorAll('.matches_items_container');
 
   matchesLinks.forEach((link) => {
     link.addEventListener("click", function() {

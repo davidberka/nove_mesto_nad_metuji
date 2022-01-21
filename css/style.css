@@ -1340,7 +1340,7 @@ footer a, footer p {
     padding: 3.5rem 3.75rem;
   }
   .roster_main > h1 {
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
   }
 
   .roster_categories_container {
@@ -1697,6 +1697,163 @@ footer a, footer p {
 
   .player_stats {
     padding-right: 8rem;
+  }
+}
+.matches_main {
+  background: #17428C;
+  padding: 2.5rem 1rem;
+}
+.matches_main > h1 {
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.matches_main > h1 span {
+  font-weight: 400;
+  font-size: 1em;
+}
+.matches_main h3 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.matches_main_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.matches_main_container .item {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #FFDD18;
+  padding: 1rem;
+}
+.matches_main_container .item .roundDate {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.matches_main_container .item .roundDate span:nth-child(2) {
+  font-weight: 500;
+}
+.matches_main_container .item .logos {
+  margin-bottom: 0.5rem;
+}
+.matches_main_container .item .logos img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+.matches_main_container .item .teams {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.matches_main_container .item .teams h3 {
+  line-height: 1.1;
+}
+.matches_main_container .item .score {
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.matches_main_container .item .score.win {
+  color: #1cad3b;
+}
+.matches_main_container .item .score.lose {
+  color: #c11e1e;
+}
+.matches_main_container .item .buttons {
+  display: flex;
+  gap: 1rem;
+}
+.matches_main_container .item .buttons a {
+  color: #FFFFFF;
+  background: #153170;
+  padding: 0.2rem 1rem;
+  transition: background 0.1s ease-out;
+}
+.matches_main_container .item .buttons a:hover {
+  background: #001b56;
+}
+
+@media only screen and (min-width: 768px) {
+  .matches_main_container .item {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .matches_main {
+    padding: 2.5rem 3rem;
+  }
+
+  .matches_main_container .item {
+    width: 100%;
+    flex-direction: row;
+  }
+  .matches_main_container .item .roundDate, .matches_main_container .item .logos, .matches_main_container .item .teams, .matches_main_container .item .score {
+    margin-bottom: 0;
+  }
+  .matches_main_container .item .roundDate {
+    flex: 0.2;
+  }
+  .matches_main_container .item .logos {
+    flex: 0.15;
+    display: flex;
+  }
+  .matches_main_container .item .teams {
+    flex: 0.35;
+    text-align: left;
+  }
+  .matches_main_container .item .score {
+    flex: 0.1;
+  }
+  .matches_main_container .item .buttons {
+    flex: 0.2;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .matches_main_container .item {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .matches_main {
+    padding: 3.5rem 3.75rem;
+  }
+  .matches_main > h1 {
+    margin-bottom: 2.5rem;
+  }
+
+  .matches_main_container .item {
+    width: 100%;
+  }
+  .matches_main_container .item .roundDate span:nth-child(2) {
+    font-size: 1.1rem;
+  }
+  .matches_main_container .item .logos img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .matches_main_container .item .teams h3 {
+    line-height: 1.5;
+  }
+  .matches_main_container .item .score {
+    font-size: 2rem;
+  }
+  .matches_main_container .item .buttons a {
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .matches_main {
+    padding: 3.5rem 8rem;
+  }
+
+  .matches_main_container .item {
+    width: 75%;
   }
 }
 

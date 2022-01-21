@@ -1,0 +1,188 @@
+.matches_main {
+    background: $primaryBlue;
+    padding: 2.5rem 1rem;
+
+    & > h1 {
+        font-weight: 900;
+        color: $white;
+        margin-bottom: 2rem;
+
+        span {
+            font-weight: 400;
+            font-size: 1em;
+        }
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+}
+
+.matches_main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .item {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $primaryYellow;
+        padding: 1rem;
+
+        .roundDate {
+            margin-bottom: .5rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            span:nth-child(2) {
+                font-weight: 500;
+            }
+        }
+
+        .logos {
+            margin-bottom: .5rem;
+            img {
+                width: 3rem;
+                height: 3rem;
+                object-fit: contain;
+            }
+        }
+
+        .teams {
+            text-align: center;
+            margin-bottom: .5rem;
+
+            h3 {
+                line-height: 1.1;
+            }
+        }
+
+        .score {
+            margin-bottom: 1rem;
+            line-height: 1;
+
+            &.win {
+                color: #1cad3b;
+            }
+
+            &.lose {
+                color: #c11e1e;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                color: $white;
+                background: $darkBlue;
+                padding: .2rem 1rem;
+                transition: background .1s ease-out;
+
+                &:hover {
+                    background: #001b56;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .matches_main_container .item {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .matches_main {
+        padding: 2.5rem 3rem;
+    }
+
+    .matches_main_container .item {
+        width: 100%;
+        flex-direction: row;
+
+        .roundDate, .logos, .teams, .score {
+            margin-bottom: 0;
+        }
+
+        .roundDate {
+            flex: .2;
+        }
+
+        .logos {
+            flex: .15;
+            display: flex;
+        }
+
+        .teams {
+            flex: .35;
+            text-align: left;
+        }
+
+        .score {
+            flex: .1;
+        }
+
+        .buttons {
+            flex: .2;
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .matches_main_container .item {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .matches_main {
+        padding: 3.5rem 3.75rem;
+
+        & > h1 {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .matches_main_container .item {
+        width: 100%;
+
+        .roundDate span:nth-child(2) {
+            font-size: 1.1rem;
+        }
+
+        .logos img {
+            height: 4rem;
+            width: 4rem;
+        }
+
+        .teams h3 {
+            line-height: 1.5;
+        }
+
+        .score {
+            font-size: 2rem;
+        }
+
+        .buttons a {
+            padding: .5rem 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .matches_main {
+        padding: 3.5rem 8rem;
+    }
+
+    .matches_main_container .item {
+        width: 75%;
+    }
+}
