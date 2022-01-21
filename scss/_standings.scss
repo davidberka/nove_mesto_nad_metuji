@@ -1,0 +1,104 @@
+.standings_main {
+    background: $primaryBlue;
+    padding: 2.5rem 1rem;
+
+    & > h1 {
+        font-weight: 900;
+        color: $white;
+        margin-bottom: 2rem;
+
+        span {
+            font-weight: 400;
+            font-size: 1em;
+        }
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+
+    .table_container {
+        overflow-x: scroll;
+        padding: unset;
+        background: unset;
+    }
+
+    .table {
+        color: $white;
+
+        thead {
+            background: $darkBlue;
+
+            th {
+                padding: .5rem;
+            }
+        }
+
+        tr {
+            td {
+                padding: .5rem 1rem;
+
+                &:nth-child(2) {
+                    white-space: nowrap;
+                    font-weight: 700;
+
+                    img {
+                        margin-right: .5rem;
+                    }
+                }
+
+                &:nth-child(3), &:nth-child(6) {
+                    font-weight: unset;
+                }
+            }
+
+        }
+        
+        tr:not(:last-child) {
+            border-bottom: 1px solid rgba($color: $white, $alpha: .5);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .standings_main .table_container {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        -ms-overflow-style: none;   
+        scrollbar-width: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .standings_main {
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .standings_main {
+        padding: 3.5rem 3.75rem;
+
+        & > h1 {
+            margin-bottom: 2.5rem;
+        }
+
+        .table_container .table {
+            width: unset;
+
+            td, th {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .standings_main {
+        padding: 3.5rem 8rem;
+    }
+}

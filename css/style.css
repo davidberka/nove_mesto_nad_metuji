@@ -1856,5 +1856,87 @@ footer a, footer p {
     width: 75%;
   }
 }
+.standings_main {
+  background: #17428C;
+  padding: 2.5rem 1rem;
+}
+.standings_main > h1 {
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.standings_main > h1 span {
+  font-weight: 400;
+  font-size: 1em;
+}
+.standings_main h3 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.standings_main .table_container {
+  overflow-x: scroll;
+  padding: unset;
+  background: unset;
+}
+.standings_main .table {
+  color: #FFFFFF;
+}
+.standings_main .table thead {
+  background: #153170;
+}
+.standings_main .table thead th {
+  padding: 0.5rem;
+}
+.standings_main .table tr td {
+  padding: 0.5rem 1rem;
+}
+.standings_main .table tr td:nth-child(2) {
+  white-space: nowrap;
+  font-weight: 700;
+}
+.standings_main .table tr td:nth-child(2) img {
+  margin-right: 0.5rem;
+}
+.standings_main .table tr td:nth-child(3), .standings_main .table tr td:nth-child(6) {
+  font-weight: unset;
+}
+.standings_main .table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .standings_main .table_container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .standings_main .table_container::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .standings_main {
+    padding: 2.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .standings_main {
+    padding: 3.5rem 3.75rem;
+  }
+  .standings_main > h1 {
+    margin-bottom: 2.5rem;
+  }
+  .standings_main .table_container .table {
+    width: unset;
+  }
+  .standings_main .table_container .table td, .standings_main .table_container .table th {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .standings_main {
+    padding: 3.5rem 8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
