@@ -494,10 +494,16 @@ footer a, footer p {
 .button_hp:hover .arrow {
   margin-left: 1.25rem;
 }
-.button_hp .arrow {
+
+.arrow {
   margin-left: 1rem;
   margin-bottom: 0rem;
   transition: all 0.1s ease-out;
+  width: 17px;
+  height: 16px;
+}
+.arrow.yellow {
+  color: #FFDD18;
 }
 
 .topstory_article {

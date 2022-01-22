@@ -17,11 +17,18 @@
         }
     }
 
-    .arrow {
-       margin-left: 1rem; 
-       margin-bottom: 0rem;
-       transition: all .1s ease-out;
-    }
+}
+
+.arrow {
+   margin-left: 1rem; 
+   margin-bottom: 0rem;
+   transition: all .1s ease-out;
+   width: 17px;
+   height: 16px;
+
+   &.yellow {
+       color: $primaryYellow;
+   }
 }
 
 .topstory_article {
