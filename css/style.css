@@ -96,6 +96,41 @@ h4 {
   padding: 0.5rem;
 }
 
+.hockey_icon {
+  width: 14px;
+  height: 14px;
+  background-color: #FFFFFF;
+  -webkit-mask: url(../assets/../images/hockey_icon.svg) no-repeat center;
+  mask: url(../assets/../images/hockey_icon.svg) no-repeat center;
+}
+.hockey_icon.yellow {
+  background-color: #FFDD18;
+}
+
+.clock_icon {
+  width: 14px;
+  height: 14px;
+  background-color: #FFFFFF;
+  -webkit-mask: url(../assets/../images/clock.svg) no-repeat center;
+  mask: url(../assets/../images/clock.svg) no-repeat center;
+}
+
+.category_icon {
+  width: 14px;
+  height: 14px;
+  background-color: #FFFFFF;
+  -webkit-mask: url(../assets/../images/article_type.svg) no-repeat center;
+  mask: url(../assets/../images/article_type.svg) no-repeat center;
+}
+
+.author_icon {
+  width: 14px;
+  height: 14px;
+  background-color: #FFFFFF;
+  -webkit-mask: url(../assets/../images/author.svg) no-repeat center;
+  mask: url(../assets/../images/author.svg) no-repeat center;
+}
+
 @media only screen and (min-width: 1440px) {
   h1 {
     font-size: 4rem;
@@ -501,9 +536,12 @@ footer a, footer p {
   transition: all 0.1s ease-out;
   width: 17px;
   height: 16px;
+  background-color: #FFDD18;
+  -webkit-mask: url(../assets/../images/arrow.svg) no-repeat center;
+  mask: url(../assets/../images/arrow.svg) no-repeat center;
 }
-.arrow.yellow {
-  color: #FFDD18;
+.arrow.blue {
+  background-color: #17428C;
 }
 
 .topstory_article {
@@ -559,7 +597,7 @@ footer a, footer p {
   display: flex;
   align-items: center;
 }
-.topstory_article_header > div img {
+.topstory_article_header > div > div {
   margin-right: 0.5rem;
 }
 
@@ -729,6 +767,11 @@ footer a, footer p {
   margin-left: 0.5rem;
 }
 
+.matches_item_footer {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
 .matches_item_footer a {
   color: #17428C;
 }
@@ -1039,7 +1082,7 @@ footer a, footer p {
   display: flex;
   align-items: center;
 }
-.matchArticle_desc > div img {
+.matchArticle_desc > div > div {
   object-fit: contain;
   margin-right: 0.5rem;
 }

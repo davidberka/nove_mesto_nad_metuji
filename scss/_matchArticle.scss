@@ -14,7 +14,7 @@
         display: flex;
         align-items: center;
 
-        img {
+        & > div {
             object-fit: contain;
             margin-right: .5rem;
         }

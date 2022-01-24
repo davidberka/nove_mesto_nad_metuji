@@ -25,9 +25,12 @@
    transition: all .1s ease-out;
    width: 17px;
    height: 16px;
+   background-color: $primaryYellow;
+   -webkit-mask: url(../assets/../images/arrow.svg) no-repeat center;
+   mask: url(../assets/../images/arrow.svg) no-repeat center;
 
-   &.yellow {
-       color: $primaryYellow;
+   &.blue {
+       background-color: $primaryBlue;
    }
 }
 
@@ -91,7 +94,7 @@
         display: flex;
         align-items: center;
 
-        img {
+        & > div {
             margin-right: .5rem;
         }
     }
@@ -288,6 +291,10 @@
 }
 
 .matches_item_footer {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
     a {
         color: $primaryBlue;
 

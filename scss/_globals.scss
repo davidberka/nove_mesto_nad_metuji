@@ -106,6 +106,42 @@ h4 {
     padding: .5rem;
 }
 
+.hockey_icon {
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    -webkit-mask: url(../assets/../images/hockey_icon.svg) no-repeat center;
+    mask: url(../assets/../images/hockey_icon.svg) no-repeat center;
+    
+    &.yellow {
+        background-color: $primaryYellow;
+    }
+}
+
+.clock_icon {
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    -webkit-mask: url(../assets/../images/clock.svg) no-repeat center;
+    mask: url(../assets/../images/clock.svg) no-repeat center;
+}
+
+.category_icon {
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    -webkit-mask: url(../assets/../images/article_type.svg) no-repeat center;
+    mask: url(../assets/../images/article_type.svg) no-repeat center;
+}
+
+.author_icon {
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    -webkit-mask: url(../assets/../images/author.svg) no-repeat center;
+    mask: url(../assets/../images/author.svg) no-repeat center;
+}
+
 @media only screen and (min-width: 1440px) {
     h1 {
         font-size: 4rem;
