@@ -1,0 +1,47 @@
+.youth_navigation {
+    background: $darkBlue;
+}
+
+.youth_links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .75rem 1.5rem;
+    padding: 2rem 1rem 1rem 1rem;
+
+    li {
+        a {
+            color: $primaryYellow;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .youth_links {
+        padding: .5rem 1rem;
+        width: max-content;
+        margin: 0 auto;
+
+        li a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }            
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .youth_links {
+        margin: unset;
+        margin-left: 11.1rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .youth_links {
+        margin-left: 15.5rem;
+    }
+}
