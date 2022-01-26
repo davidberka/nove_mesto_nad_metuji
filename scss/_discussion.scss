@@ -1,10 +1,82 @@
 .discussion_main {
     background: $primaryBlue;
+    color: $white;
     padding: 2.5rem 1rem;
 
     & > h1 {
         font-weight: 900;
         color: $white;
         margin-bottom: 2rem;
+    }
+
+    .notice {
+        margin-bottom: 2rem;
+
+        a {
+            color: $primaryYellow;
+            text-decoration: underline;
+        }
+    }
+}
+
+.discussion_messages_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.discussion_message {
+    padding: 1rem;
+    border: 2px solid $primaryYellow;
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: .75rem;
+
+        & > div {
+            display: flex;
+            align-items: center;
+
+            & > div {
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .discussion_main {
+        padding: 2.5rem 3rem;
+    }
+
+    .discussion_message {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .discussion_main {
+        padding: 3.5rem 3.75rem;
+
+        & > h1 {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .discussion_message {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .discussion_main {
+        padding: 3.5rem 8rem;
+    }
+
+    .discussion_message {
+        width: 60%;
     }
 }

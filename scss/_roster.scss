@@ -70,12 +70,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .roster_main {
-        padding: 2.5rem 3rem;
-    }
-
     .roster_player {
         width: 396px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .roster_main {
+        padding: 2.5rem 3rem;
     }
 }
 
