@@ -2130,5 +2130,73 @@ footer a, footer p {
     width: 60%;
   }
 }
+.auth_main {
+  background: #17428C;
+  color: #FFFFFF;
+  padding: 2.5rem 1rem;
+}
+.auth_main > h1 {
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.auth_main form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.auth_main form input, .auth_main form button {
+  font-family: "Saira", sans-serif;
+}
+.auth_main form input {
+  padding: 0.5rem;
+  background: #153170;
+  border: 1px solid #FFDD18;
+  outline: none;
+  color: #FFFFFF;
+  border-radius: 2px;
+}
+.auth_main form input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.auth_main form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: max-content;
+  background: #FFDD18;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.1s ease-out;
+}
+.auth_main form button:hover {
+  background: #d9bc15;
+}
+
+@media only screen and (min-width: 768px) {
+  .auth_main input {
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .auth_main {
+    padding: 2.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .auth_main {
+    padding: 3.5rem 3.75rem;
+  }
+  .auth_main > h1 {
+    margin-bottom: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .auth_main {
+    padding: 3.5rem 8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

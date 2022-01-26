@@ -1,0 +1,81 @@
+.auth_main {
+    background: $primaryBlue;
+    color: $white;
+    padding: 2.5rem 1rem;
+
+    & > h1 {
+        font-weight: 900;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        input, button {
+            font-family: 'Saira', sans-serif;
+        }
+
+        input {
+            padding: .5rem;
+            background: $darkBlue;
+            border: 1px solid $primaryYellow;
+            outline: none;
+            color: $white;
+            border-radius: 2px;
+
+            &::placeholder {
+                color: rgba($color: $white, $alpha: .75);
+            }
+        }
+
+        button {
+            margin-top: .5rem;
+            padding: .5rem;
+            width: max-content;
+            background: $primaryYellow;
+            border: none;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background .1s ease-out;
+
+            &:hover {
+                background: #d9bc15;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .auth_main {
+        input {
+            width: 20rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .auth_main {
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .auth_main {
+        padding: 3.5rem 3.75rem;
+
+        & > h1 {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .auth_main {
+        padding: 3.5rem 8rem;
+    }
+}
