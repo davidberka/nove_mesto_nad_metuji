@@ -131,6 +131,14 @@ h4 {
   mask: url(../assets/../images/author.svg) no-repeat center;
 }
 
+.staff_icon {
+  width: 14px;
+  height: 14px;
+  background-color: #FFFFFF;
+  -webkit-mask: url(../assets/../images/staff.svg) no-repeat center;
+  mask: url(../assets/../images/staff.svg) no-repeat center;
+}
+
 @media only screen and (min-width: 1440px) {
   h1 {
     font-size: 4rem;
@@ -2195,6 +2203,73 @@ footer a, footer p {
 }
 @media only screen and (min-width: 1920px) {
   .auth_main {
+    padding: 3.5rem 8rem;
+  }
+}
+.staff_main {
+  background: #17428C;
+  color: #FFFFFF;
+  padding: 2.5rem 1rem;
+}
+.staff_main > h1 {
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.staff_main > h1 span {
+  font-weight: 400;
+  font-size: 1em;
+}
+.staff_main h3 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.staff_container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.staff_item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #6F80B3;
+}
+.staff_item .main_img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+}
+.staff_item .content > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+.staff_item .content > div .staff_icon {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .staff_main {
+    padding: 2.5rem 3rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .staff_main {
+    padding: 3.5rem 3.75rem;
+  }
+  .staff_main > h1 {
+    margin-bottom: 2.5rem;
+  }
+
+  .staff_container {
+    gap: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .staff_main {
     padding: 3.5rem 8rem;
   }
 }
