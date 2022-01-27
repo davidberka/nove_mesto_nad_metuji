@@ -3,11 +3,35 @@
     color: $white;
     padding: 2.5rem 1rem;
 
-    & > h1 {
-        font-weight: 900;
-        color: $white;
+    & > .header {
         margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 900;
+            color: $white;
+        }
+
+        button {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: none;
+            background: $primaryYellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background .1s ease-out;
+
+            &:hover {
+                background: #d9bc15;
+            }
+        }
     }
+
 
     .notice {
         margin-bottom: 2rem;
@@ -15,6 +39,100 @@
         a {
             color: $primaryYellow;
             text-decoration: underline;
+        }
+    }
+}
+
+.discussion_popup_bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: black;
+    opacity: .4;
+    z-index: 30;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.discussion_popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    background: $darkBlue;
+    border-radius: 2px;
+    z-index: 31;
+    display: none;
+    flex-direction: column;
+
+    &.active {
+        display: flex;
+    }
+
+    .close_btn {
+        width: max-content;
+        align-self: flex-end;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: none;
+        background: #c11e1e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(45deg);
+        margin-bottom: 1rem;
+        transition: background .1s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            background: #bb0909;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        input, textarea, button {
+            font-family: 'Saira', sans-serif;
+            max-width: 100%;
+        }
+
+        input, textarea {
+            padding: .5rem;
+            background: $darkBlue;
+            border: 1px solid $primaryYellow;
+            outline: none;
+            color: $white;
+            border-radius: 2px;
+
+            &::placeholder {
+                color: rgba($color: $white, $alpha: .75);
+            }
+        }
+
+        button {
+            margin-top: .5rem;
+            padding: .5rem;
+            width: max-content;
+            background: $primaryYellow;
+            border: none;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background .1s ease-out;
+
+            &:hover {
+                background: #d9bc15;
+            }
         }
     }
 }
@@ -61,8 +179,12 @@
     .discussion_main {
         padding: 3.5rem 3.75rem;
 
-        & > h1 {
+        & > .header {
             margin-bottom: 2.5rem;
+        }
+
+        .discussion_popup {
+            width: 20rem;
         }
     }
 

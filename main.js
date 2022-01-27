@@ -46,3 +46,20 @@ function matchesLinksHandler() {
 }
 
 matchesLinksHandler();
+
+function discussionHandler() {
+  const discussionAdd = document.querySelector(".discussion_add");
+  const discussionClose = document.querySelector(".discussion_popup .close_btn")
+  
+  discussionAdd.addEventListener('click', () => {
+    document.querySelector('.discussion_popup_bg').classList.add('active')
+    document.querySelector('.discussion_popup').classList.add('active')
+  })
+  
+  discussionClose.addEventListener('click', () => {
+    document.querySelector('.discussion_popup_bg').classList.remove('active')
+    document.querySelector('.discussion_popup').classList.remove('active')
+  })
+}
+
+discussionHandler()

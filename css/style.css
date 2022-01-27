@@ -131,6 +131,14 @@ h4 {
   mask: url(../assets/../images/author.svg) no-repeat center;
 }
 
+.add_icon {
+  width: 14px;
+  height: 14px;
+  background-color: #153170;
+  -webkit-mask: url(../assets/../images/add.svg) no-repeat center;
+  mask: url(../assets/../images/add.svg) no-repeat center;
+}
+
 .staff_icon {
   width: 14px;
   height: 14px;
@@ -150,7 +158,7 @@ h4 {
 }
 header {
   position: relative;
-  z-index: 50;
+  z-index: 20;
   height: 5rem;
   background: #153170;
   color: #FFFFFF;
@@ -2101,10 +2109,30 @@ footer a, footer p {
   color: #FFFFFF;
   padding: 2.5rem 1rem;
 }
-.discussion_main > h1 {
+.discussion_main > .header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.discussion_main > .header h1 {
   font-weight: 900;
   color: #FFFFFF;
-  margin-bottom: 2rem;
+}
+.discussion_main > .header button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: #FFDD18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.1s ease-out;
+}
+.discussion_main > .header button:hover {
+  background: #d9bc15;
 }
 .discussion_main .notice {
   margin-bottom: 2rem;
@@ -2112,6 +2140,90 @@ footer a, footer p {
 .discussion_main .notice a {
   color: #FFDD18;
   text-decoration: underline;
+}
+
+.discussion_popup_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: black;
+  opacity: 0.4;
+  z-index: 30;
+  display: none;
+}
+.discussion_popup_bg.active {
+  display: block;
+}
+
+.discussion_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  background: #153170;
+  border-radius: 2px;
+  z-index: 31;
+  display: none;
+  flex-direction: column;
+}
+.discussion_popup.active {
+  display: flex;
+}
+.discussion_popup .close_btn {
+  width: max-content;
+  align-self: flex-end;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  background: #c11e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  margin-bottom: 1rem;
+  transition: background 0.1s ease-out;
+  cursor: pointer;
+}
+.discussion_popup .close_btn:hover {
+  background: #bb0909;
+}
+.discussion_popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.discussion_popup form input, .discussion_popup form textarea, .discussion_popup form button {
+  font-family: "Saira", sans-serif;
+  max-width: 100%;
+}
+.discussion_popup form input, .discussion_popup form textarea {
+  padding: 0.5rem;
+  background: #153170;
+  border: 1px solid #FFDD18;
+  outline: none;
+  color: #FFFFFF;
+  border-radius: 2px;
+}
+.discussion_popup form input::placeholder, .discussion_popup form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.discussion_popup form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: max-content;
+  background: #FFDD18;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.1s ease-out;
+}
+.discussion_popup form button:hover {
+  background: #d9bc15;
 }
 
 .discussion_messages_container {
@@ -2152,8 +2264,11 @@ footer a, footer p {
   .discussion_main {
     padding: 3.5rem 3.75rem;
   }
-  .discussion_main > h1 {
+  .discussion_main > .header {
     margin-bottom: 2.5rem;
+  }
+  .discussion_main .discussion_popup {
+    width: 20rem;
   }
 
   .discussion_message {

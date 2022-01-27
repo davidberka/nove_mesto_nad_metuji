@@ -142,6 +142,13 @@ h4 {
     mask: url(../assets/../images/author.svg) no-repeat center;
 }
 
+.add_icon {
+    width: 14px;
+    height: 14px;
+    background-color: $darkBlue;
+    -webkit-mask: url(../assets/../images/add.svg) no-repeat center;
+    mask: url(../assets/../images/add.svg) no-repeat center;
+}
 
 .staff_icon {
     width: 14px;
